@@ -1,14 +1,15 @@
 import React from 'react'
-import ErrorPage from './error'
+import Navbar from '../components/Navbar'
 
-const layout = ({children}:{children:React.ReactNode}) => {
+
+const layout = ({children}:Readonly<{children:React.ReactNode}>) => {
   return (
-    <div className='text-3xl'>
-       Navbar
+    <main className='font-sans '>
+      <Navbar />
       
       {children }
-    </div>
+    </main>
   )
 }
 
-export default layout
+export default layout     
